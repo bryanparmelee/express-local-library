@@ -1,8 +1,11 @@
+
+
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -13,7 +16,8 @@ var app = express();
 //database setup
 const mongoose = require("mongoose");
 mongoose.set('strictQuery', false);
-const mongoDB = "mongodb+srv://admin:App0g14tur4@cluster0.y716jw6.mongodb.net/local_library?retryWrites=true&w=majority";
+
+const mongoDB = `mongodb+srv://admin:admin@cluster0.y716jw6.mongodb.net/local_library?retryWrites=true&w=majority`;
 
 main().catch(err => console.log(err));
 async function main() {
