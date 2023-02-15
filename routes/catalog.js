@@ -48,7 +48,7 @@ router.get('/bookinstance/:id/delete', book_instance_controller.bookinstance_del
 router.post('/bookinstance/:id/delete', book_instance_controller.bookinstance_delete_post);
 router.get('/bookinstance/:id/update', book_instance_controller.bookinstance_update_get);
 router.post('/bookinstance/:id/update', book_instance_controller.bookinstance_update_post);
-router.get('/bookinstnace/:id', book_instance_controller.bookinstance_detail);
+router.get('/bookinstance/:id', book_instance_controller.bookinstance_detail);
 router.get('/bookinstances', book_instance_controller.bookinstance_list);
 
 module.exports = router;
